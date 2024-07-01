@@ -77,7 +77,7 @@ export function InvoiceHelperForm() {
     const _usdPriceInBrl = formatCurrency(values.usdPriceInBrl);
     const _brlTotalValue = formatCurrency(values.brlTotalValue);
 
-    return `Desenvolvimento de sistemas - ${_totalHours}hrs - U$${_usdPerHour} a hora - U$${_usdTotalValue} \nCotação do dia: R$${_usdPriceInBrl} \nValor em moeda nacional: R$${_brlTotalValue} \nInvoice nº XXXXXXXX`;
+    return `Desenvolvimento de sistemas - ${_totalHours}hrs - ${_usdPerHour} a hora - ${_usdTotalValue} \nCotação do dia: ${_usdPriceInBrl} \nValor em moeda nacional: R$${_brlTotalValue} \nInvoice nº XXXXXXXX`;
   }, [values]);
 
   return (
